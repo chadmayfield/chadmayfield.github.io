@@ -13,9 +13,9 @@ google_analytics: UA-79070913-1
 google_verification:
 
 # Optional features
-animated:             false
+animated:             true
 show_related_posts:   false
-show_post_footers:    false
+show_post_footers:    true
 show_social_icons:    true
 ajaxify_contact_form: false
 
@@ -30,7 +30,7 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username: chadrmayfield
+github_username: chadmayfield
 bitbucket_username:
 stackoverflow_id:
 twitter_username: chadrmayfield
@@ -38,7 +38,7 @@ google_plus_id:
 linkedin_username: chadmayfield
 angellist_username:
 medium_id:
-bitcoin_url: 
+bitcoin_url: 1PY6NfGreR1fpjp5F3QDJCZf6y4g7nFNr1
 paypal_url:
 flattr_button:
 
@@ -47,7 +47,7 @@ show_sharing_icons: false
 share_text: 'Share this post!'
 # Change to 'true' to enable individual icons
 share_facebook: false
-share_twitter: false
+share_twitter: true
 share_googleplus: false
 share_linkedin: false
 share_digg: false
