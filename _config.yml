@@ -1,8 +1,8 @@
 # Site settings
 title:       Chad Mayfield
-email:       info@chadmayfield.com
+email:       
 author:      Chad Mayfield
-description: "The personal website of Chad Mayfield."
+description: "The personal website of Chad Mayfield, husband, father, engineer, hacker, and all around nice guy!"
 baseurl:     ""
 url:         "http://chadmayfield.com"
 date_format: "%b %-d, %Y"
