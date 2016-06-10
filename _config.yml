@@ -21,7 +21,7 @@ ajaxify_contact_form: false
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname:
+disqus_shortname: chadmayfield
 
 # Facebook Comments plugin
 # (leave blank to disable Facebook Comments, otherwise set it to true)
@@ -38,7 +38,7 @@ google_plus_id:
 linkedin_username: chadmayfield
 angellist_username:
 medium_id:
-bitcoin_url: 1PY6NfGreR1fpjp5F3QDJCZf6y4g7nFNr1
+bitcoin_url:
 paypal_url:
 flattr_button:
 
