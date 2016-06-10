@@ -2,7 +2,7 @@
 layout:     post
 title:      Hello, World
 date:       2016-06-10 13:16:00
-summary:    Hellow World!
+summary:    Hello World! I'm baaaack!
 categories: jekyll pixyll
 ---
 
