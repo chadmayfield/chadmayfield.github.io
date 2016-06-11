@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-My name is Chad Mayfield, obviously. I've been in the technology industry for 15+ years with some experience in Support and QA, but mostly in Development.  Currently I am a Senior Software Engineer for Forcepoint (a Raytheon company) specializing in Linux System Engineering.  I work from the "metal to the middleware" with an emphasis on security and compliance.  I am a builder and wanna be maker.
+My name is Chad Mayfield, obviously. I've been in the technology industry for 15+ years with some experience in Support and QA, but mostly in Development.  Currently I am a Senior Software Engineer for Forcepoint (a Raytheon company) specializing in Linux Systems Engineering.  I work from the "metal to the middleware" with an emphasis on security and compliance.  I am a builder and wanna be maker.
+
+Looking for some projects I've done? Visit [the kyln](http://kyln.io/).
 
 I live in the beautiful state of Utah with my family (whom I actually like) and try to travel whenever I get the chance.
 
