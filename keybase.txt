@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/crm
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://chadmayfield.com
+  * I am crm (https://keybase.io/crm) on keybase.
+  * I have a public key with fingerprint A22C 343E 104B B7A4 A257  30B3 E854 9105 B0B8 DBFB
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01011f767dd72368f3d2567bf0fb3f1218ace444fab0c444e7941c929554b48715240a",
+            "fingerprint": "a22c343e104bb7a4a25730b3e8549105b0b8dbfb",
+            "host": "keybase.io",
+            "key_id": "e8549105b0b8dbfb",
+            "kid": "01011f767dd72368f3d2567bf0fb3f1218ace444fab0c444e7941c929554b48715240a",
+            "uid": "9261ceef0b969e70ac20f1510f07a119",
+            "username": "crm"
+        },
+        "revoke": {
+            "sig_ids": [
+                "3aa5ff0740feaba6c3cfe95f85d1a5279a3965e9bebc4151ae87969bd50127810f"
+            ]
+        },
+        "service": {
+            "hostname": "chadmayfield.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1465617547,
+    "expire_in": 157680000,
+    "prev": "5c2904d2f271905f8e19dda3c374f42c413f1505d0445b2a8680517510e912d0",
+    "seqno": 22,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMJsAnicrVJdiFVFHL+rq1srF0XFpbKQ2dwV9sOZOTNnzlwRscDc1RBtZQ3Ny8yZ
+mbun673neu7Za+u6IYoUqC9ZuoEmgh8YBObHghpsmahoK6hFyray0ENJmGJBirA0
+Z8m3Hp2XPzPz+/r/Zy6mJ6Zqq1IzC9vah/VA1bXvHnWnOtfu2tkLZKh6QKYX5PV4
+0RuULsfZfKBABkAEETLMZUox7LiecRSmLpMGGukYhJEnfE0IMUJC31bNOEE+x5xS
+IonHEMUECtAMTFDM6agUBcXYygqMfYc4GkEiJRNEYMocKB3tUcIRpBJKT0kjLbEr
+LCcMG06Ksm4NQntmN9nxeP+Df865u8flOHaRr7WBkrtcMyh8DA2iCBrIBEI8AZZ1
+VBQFbdF+VAB9zSDSlTCvk5GWg5zNWwaZtcARghrLItBoIYXrO77RnBqPKiQoZlw4
+3KWaSy19Yh2E9pj1lIpChJlnHcF7VtuaVQJ/XDwZ0DPjLqEKoscE9g1b/bBgY5Wi
+MA79cIO97YrjUiYJFveUEvQmLbP/6WRlUFT2hSyhoqNyEBZBBlmkHweJMCIudRGj
+hDUD/UEpiHQ2SBCUuR60K7HRFStJfcwhUdhghji0XWnElRKO7zBiCLYd2eFTSBUk
+hEosPMunVhhBzRFWECSdbSyGIIOxzSlyVtMOryji7kiDvgvfrqtOVdWmJk+akHzd
+VO2L05596IkPa8bm9Q8+aZs+9CB/7Nb1w+k5ezoX1D1tWDAy+vHb7aW625/erT91
+48v6ka7RqTPu/PTuGbXwzFvN69SSOP1glbxQKH/+zaOOq7fuzG19ml+Zw03r+/cP
+ofUnVq+pG9iqR6a8/EbT7Xem3Ke1l+pr8NhLjfrg4769uQaebv1k+PUdN387uTR9
+9G7v6OX5n80+N7ZsRcPZF4buq+0n/nn/l99Pz/nir7PbdmRnP1w98nPl+OU9sz7M
+PunbOXnCwJb+QnUTbLm3bGZlOOfsDjaPNrbspq8enFT8YyD86Mjhr0pXpi5t57nl
+3/9woPPX8392NnYfWvnKxR9bqjuWe4OvBW1ts/YNvvn3javbFy2+97XzL0OFVDI=
+=bIQU
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/crm
+
+==================================================================
