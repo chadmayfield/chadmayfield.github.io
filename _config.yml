@@ -4,7 +4,8 @@ email:       chad.mayfield@gmail.com
 author:      Chad Mayfield
 description: "The personal website of Chad Mayfield, husband, father, engineer, hacker, and all around nice guy!"
 baseurl:     ""
-url:         "http://chadmayfield.com"
+url:         "https://chadmayfield.com" # with the https protocol
+enforce_ssl: www.chadmayfield.com           # without any protocol
 date_format: "%b %-d, %Y"
 
 # Google analytics
