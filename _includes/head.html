@@ -19,6 +19,14 @@
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     {% endif %}
 
+    <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+    
+    <script type="text/javascript">
+    var host = "chadmayfield.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
+
     <!-- Verifications -->
     {% if site.google_verification %}
       <meta name="google-site-verification" content="{{ site.google_verification }}" />
