@@ -3,7 +3,7 @@ layout:     post
 title:      Hello, World
 date:       2016-06-10 13:16:00
 summary:    Hello World! I'm baaaack!
-categories: hello misc
+#categories: hello misc
 ---
 
 Hello.
