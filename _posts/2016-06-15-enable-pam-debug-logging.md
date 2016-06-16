@@ -6,7 +6,7 @@ summary:    How to enable PAM debug logging on RHEL-like systems...
 #categories: linux admin pam
 ---
 
-[Pluggagable authentication module](https://en.wikipedia.org/wiki/Pluggable_authentication_module), or PAM for short, is now at the core of most modern Linux distributions.  In very simplistic terms, PAM is the authentication core that most Linux programs use to authenticate a user and/or program.  Want to login?  PAM reads /etc/shadow to verify the entered password.  Do you want to enforce a password policy to your users?  Yup, PAM does that.  Tuxradar has a great [overview of PAM](http://www.tuxradar.com/content/how-pam-works) (though some of it might be slightly outdated).
+[Pluggagable authentication module](https://en.wikipedia.org/wiki/Pluggable_authentication_module), or PAM for short, is now at the core of most modern Linux distributions.  In very simplistic terms, PAM is the authentication core that most Linux programs use to authenticate a user and/or program.  Want to login?  PAM reads /etc/shadow to verify the entered password.  Do you want to enforce a password policy to your users?  Yup, PAM does that.  Tuxradar has a great [overview of PAM](http://www.tuxradar.com/content/how-pam-works) (though some of it might be slightly outdated) and [this page](http://pig.made-it.com/pam.html) also has great information.
 
 While PAM is easy to configure, it is quite easy to misconfigure and could completely open your system to the type of authentication attack that you are trying to prevent by using PAM.  Much like [CoreOS recently discovered](https://coreos.com/blog/security-brief-coreos-linux-alpha-remote-ssh-issue.html).  As you start to get deeper into PAM, always remember to backup your sane config to be able to revert back!
 
