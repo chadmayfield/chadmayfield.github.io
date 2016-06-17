@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Docker usability tip #1: Change the prompt!
+title:      Docker usability tip 1: Change the prompt!
 date:       2016-06-17 14:00:00
 summary:    Extending the usability of Docker when dealing with many containers, it helps to change the bash prompt so you always know where you are.
 #categories: linux admin docker containers
