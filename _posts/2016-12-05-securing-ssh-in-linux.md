@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Securing SSH in Linux
-date:       2016-06-15 11:21:00
+date:       2016-12-05 11:00:00
 summary:    Securing SSH for servers and workstations
 #categories: linux admin ssh security
 ---
@@ -38,8 +38,8 @@ WARNING: I do not know everything, obviously. I am not a Unix wizard, I learn ev
 1. [Step 16: Check other defaults](#step-16-check-other-defaults)
 1. [Conclusion](#conclusion)
 
-### Why Secure Shell
-Some, in my opinion not many, may ask, why secure shell?  Well, because it's secure! All administrators (and regular users) should know what SSH is and how to use it. As said in the introduction it enables secure interaction with a system.  So the question may arise isn't SSH secure by default?
+### Why Secure SSH
+Some, in my opinion not many, may ask, why secure SSH?  Well, because it's secure! All administrators (and regular users) should know what SSH is and how to use it. As said in the introduction it enables secure interaction with a system.  So the question may arise isn't SSH secure by default?
 
 ### Problems with default setups
 The answer to that simple question is loaded, yes most of the time it is secure by default, but it can be "more secure".  In the realm of information security there is a concept of [defense in depth](https://en.wikipedia.org/wiki/Defense_in_depth_(computing)), I always see it as conceptric rings of security.  If an attacker can bypass one layer (or ring) of security based on a misconfiguration or even a 0-day exploit then there are more defenses in place to stop the attack.  Securing SSH can reduce the attack surface giving an attacker fewer and fewer methods to exploit a system.  Some problems with some default installs (especially in the [IoT](https://en.wikipedia.org/wiki/Internet_of_things) world) can include using SSH v1, having root access enabled (especially with a weak password or even no password at all), and even having a low key strength (lower key strengths could be compromised).
