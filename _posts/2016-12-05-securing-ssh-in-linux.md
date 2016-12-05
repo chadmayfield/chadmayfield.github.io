@@ -18,7 +18,6 @@ WARNING: I do not know everything, obviously. I am not a Unix wizard, I learn ev
 
 ### Table of Contents
 
-1. [Why Secure SSH](#why-secure-ssh)
 1. [Problems with default setups](#problems-with-default-setups)
 1. [Step 1: Secure Your Users](#step-1-secure-your-users)
 1. [Step 2: Disable unneeded user accounts](#step-2-disable-unneeded-user-accounts)
@@ -38,11 +37,8 @@ WARNING: I do not know everything, obviously. I am not a Unix wizard, I learn ev
 1. [Step 16: Check other defaults](#step-16-check-other-defaults)
 1. [Conclusion](#conclusion)
 
-### Why Secure SSH
-Some, in my opinion not many, may ask, why secure SSH?  Well, because it's secure! All administrators (and regular users) should know what SSH is and how to use it. As said in the introduction it enables secure interaction with a system.  So the question may arise isn't SSH secure by default?
-
 ### Problems with default setups
-The answer to that simple question is loaded, yes most of the time it is secure by default, but it can be "more secure".  In the realm of information security there is a concept of [defense in depth](https://en.wikipedia.org/wiki/Defense_in_depth_(computing)), I always see it as conceptric rings of security.  If an attacker can bypass one layer (or ring) of security based on a misconfiguration or even a 0-day exploit then there are more defenses in place to stop the attack.  Securing SSH can reduce the attack surface giving an attacker fewer and fewer methods to exploit a system.  Some problems with some default installs (especially in the [IoT](https://en.wikipedia.org/wiki/Internet_of_things) world) can include using SSH v1, having root access enabled (especially with a weak password or even no password at all), and even having a low key strength (lower key strengths could be compromised).
+Why secure SSH, isn't it secure by default? The answer to that simple question is loaded, yes most of the time it is relatively secure by default, but it can be "more secure".  In the realm of information security there is a concept of [defense in depth](https://en.wikipedia.org/wiki/Defense_in_depth_(computing)), I always see it as conceptric rings of security.  If an attacker can bypass one layer (or ring) of security based on a misconfiguration, unintentional bug in the code, or even a 0-day exploit, then there are more defenses in place to stop the attack.  Securing SSH can reduce the [attack surface](https://www.owasp.org/index.php/Attack_Surface_Analysis_Cheat_Sheet) giving an attacker fewer and fewer methods to exploit a system.  Some problems with some default installs (especially in the [IoT](https://en.wikipedia.org/wiki/Internet_of_things) world) can include using SSH v1, having root access enabled (especially with a weak password or even no password at all), and even having a low key strength (since lower key strengths could in theory be compromised).
 
 ### Step 1: Secure Your Users
 A system is only as secure as it's *weakest* user. Let's imagine we have a user with a weak password, perhaps `Password1`. It is very possible to have an automated attack bot online scanning a large IP space for SSH servers, when it finds one it uses common account names with [easy to guess](https://xato.net/is-123456-really-the-most-common-password-51cd4259927d#.9viiyafap) [passwords](https://dazzlepod.com/uniqpass/). If one works, great!, the attacker is in and the bot reports back to the attacker.  It is only a matter of time until the attacker tries a [privilege escalation](https://en.wikipedia.org/wiki/Privilege_escalation) attack to gain root privileges on the system and then game over. It can be that fast.  So why make it easy?  Here are some things to remember when dealing with users;
@@ -63,7 +59,7 @@ Perosnally, I have decided in the future to use some personally adapted form of 
 
 It seems the days of a one letter, one number, one upper, one lower, and once special character are gone. These are good to increase the key-space to make it more difficult on the attacker to crack a password. According to NIST, their new stance is to **put the burden of authentication on the verifyer, not the user**.
 
-### Step 2: Disable uneeded user accounts
+### Step 2: Disable unneeded user accounts
 This is pretty self-explanitory, disable any unneeded or unused user accounts.  In a multi-user enviroment users can leave a company and accounts stay active.  These accounts need to be disabled or removed, especially if the account uses a weak password as discussed above.  If the account is a system account and cannot be removed but it is not needed, then disable interactive logins or change the default shell to `/bin/false` or `/bin/nologin`.  This will disable the daemon's (or user's) login shell to prevent them from logging in.
 
 ### Step 3: Keep system up to date
@@ -112,6 +108,7 @@ To use tcpwrappers it's easy.  First let's deny all hosts to all processes;
 echo "ALL:ALL" >> /etc/hosts.deny
 ```
 Now let's allow our single IP;
+
 ```
 echo "sshd:1.2.3.4" >> /etc/hosts.allow
 ```
