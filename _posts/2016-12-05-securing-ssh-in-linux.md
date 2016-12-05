@@ -11,7 +11,7 @@ Secure Shell is a powerful network tool in an administrator's (or user's) toolbo
 
 > "Secure Shell (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network. The best known example application is for remote login to computer systems by users. SSH provides a secure channel over an unsecured network in a client-server architecture, connecting an SSH client application with an SSH server."
 
-In this article I will attempt to describe the steps that I take to secure a [default installation](https://linux.die.net/man/5/sshd_config) of SSHd, specifically OpenSSH (from know on I will refer to SSHd as SSH). Some options are important, others could be controversial, but they work for me and I hope others get something out of this.  If you have questions or comments, please leave them below.
+In this article I will attempt to describe the steps that I take to secure a [default installation](https://linux.die.net/man/5/sshd_config) of SSHd, specifically OpenSSH (from now on I will refer to the SSH *daemon* as simply SSH). Some options are important, others could be controversial, but they work for me and I hope others get something out of this.  If you have questions or comments, please leave them below.
 
 ### Disclaimer
 WARNING: I do not know everything, obviously. I am not a Unix wizard, I learn everyday.  However, I have used most of these steps to secure my SSH servers for years.  All that said, please use caution with them, do not use them unless you have an understanding of how they actually function. I have tried to include links to more in depth tutorials, man pages, etc., to help where possible. If there are errors or mispellings in this article, please let me know and I'll fix them as soon as possible.
@@ -219,7 +219,7 @@ sed -i 's/^#*LoginGraceTime [[:digit:]]m/LoginGraceTime 30/g' /etc/ssh/sshd_conf
 ```
 
 ### Step 11: Limit remote users or groups
-By default **all** valid users are able to log into a system using the default SSH config. Whitelisting, [as mentioned previously](#), is a wonderful way to add additional security to any system. Using the `AllowUsers`/`AllowGroups` and `DenyUsers`/`DenyGroups` directives we can whitelist and blacklist users on the system.
+By default **all** valid users are able to log into a system using the default SSH config. Whitelisting, [as mentioned previously](#use-a-firewall-and-rate-limit-connections), is a wonderful way to add additional security to any system. Using the `AllowUsers`/`AllowGroups` and `DenyUsers`/`DenyGroups` directives we can whitelist and blacklist users on the system.
 
 Anyone of the following to enable/restrict users or groups;
 * `AllowGroups`: list of *allowed* user **groups** seperated by spaces. For example; `AllowGroups admins dbas`
