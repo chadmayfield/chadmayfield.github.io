@@ -194,6 +194,7 @@ A package group is a set of packages that accomplish a specific purpose, for exa
 ```
 
 ###### Table 1
+
  Attribute | Description
 --------  | -------- 
 S  | File size differs
