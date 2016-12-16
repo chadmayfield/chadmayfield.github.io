@@ -163,6 +163,7 @@ sed -i 's/^#*ChallengeResponseAuthentication \(yes\|no\)/ChallengeResponseAuthen
 ```
 
 OPTIONAL STEP: As mentioned this can be tricky for some administrators with systems that have many users.  Rather than disabling it for the entire system, you may want to disable interactive logins for *specific users*, in which case the `Match user <yourusername>` directive needs to be used.  The directive is added directly above the `PasswordAuthentication no` in the `sshd_config`;
+
 ```
 sed -i 's/^PasswordAuthentication \(yes\|no\)/PasswordAuthentication no/g' /etc/ssh/sshd_config
 sed -i '/^PasswordAuthetication no/i Match user yourusername' /etc/ssh/sshd_config
