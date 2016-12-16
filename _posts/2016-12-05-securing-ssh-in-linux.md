@@ -241,6 +241,7 @@ DenyGroups sales
 ```
 
 OPTIONAL: Keeping my configs clean is important, it decreases the time it takes to make changes, it helps with readability, and satisfies my "admin-OCD".  Usually I will create user groups, much like the `wheel` group and add users that are allowed SSH access to that group. That way in my config I only have one directive, `AllowGroups wheel`, to successfully whitelist the `wheel` group.  To add a user to an existing group;
+
 ```
 usermod -a -G wheel <username>
 ```
