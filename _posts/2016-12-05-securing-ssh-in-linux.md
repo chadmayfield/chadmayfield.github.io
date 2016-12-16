@@ -192,6 +192,7 @@ From the [man page](https://linux.die.net/man/5/sshd_config); *Specifies the max
 Many may feel this is highly restrictive, but I always set `MaxAuthTries 3`. This is just a hold out from my governemnt compliance days.  If you can't login in three attempts with a ssh key, then perhaps you've forgotten your key passphrase. 
 
 To enable the option;
+
 ```
 sed -i 's/^#*MaxAuthTries [[:digit:]]/MaxAuthTries 3/g' /etc/ssh/sshd_config
 ```
@@ -246,6 +247,7 @@ usermod -a -G wheel <username>
 
 ### Step 12: Use prvilege seperation
 When enabled, SSH will seperate prviliges by creating an unprivileged child process to handle the network traffic coming from your SSH sesstion. Very little in the SSH daemon will be run as root to protect it from any possible exploits to the SSH daemon itself. After a successful authentication an additional process will be created that is privileged as the authenticated user.  This setting should [always be set to yes](https://stigviewer.com/stig/red_hat_enterprise_linux_5/2013-04-10/finding/V-22486).  Luckily, the default is yes, though I check to make sure and modify it if needed;
+
 ```
 sed -i 's/^#*UsePrivilegeSeparation.*/UsePrivilegeSeparation yes/g' /etc/ssh/sshd_config
 ```
