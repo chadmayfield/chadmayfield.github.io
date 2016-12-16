@@ -221,6 +221,7 @@ sed -i 's/^#*LoginGraceTime [[:digit:]]m/LoginGraceTime 30/g' /etc/ssh/sshd_conf
 By default **all** valid users are able to log into a system using the default SSH config. Whitelisting, [as mentioned previously](#use-a-firewall-and-rate-limit-connections), is a wonderful way to add additional security to any system. Using the `AllowUsers`/`AllowGroups` and `DenyUsers`/`DenyGroups` directives we can whitelist and blacklist users on the system.
 
 Anyone of the following to enable/restrict users or groups;
+
 * `AllowGroups`: list of *allowed* user **groups** seperated by spaces. For example; `AllowGroups admins dbas`
 * `AllowUsers`:  list of *allowed* **users** seperated by spaces. For example; `AllowUsers alice bob mary`
 * `DenyGroups`: list of *denied* user **groups** seperated by spaces. For example; `DenyGroups sales webmasters`
