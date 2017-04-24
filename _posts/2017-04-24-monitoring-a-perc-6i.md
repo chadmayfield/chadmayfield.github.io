@@ -66,7 +66,7 @@ When running to monitor an array, it is best to set it as a cronjob.  Personally
 ```
 Subject
 -------
-WARNING: Problems with RAID array on file.lomiz.com!
+WARNING: Problems with RAID array on file.chadmayfield.com!
 
 Body
 ----
