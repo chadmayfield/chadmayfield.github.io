@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Blocking porn with a Pi-hole
+title:      Blocking porn with Pi-hole
 date:       2017-06-29 11:12:01
 summary:    Using my new project called pihole-blocklists it is possible to create custom blocklists to block porn (among other things) using a pihole.  More lists and creation scripts are coming soon to block a number of possibly unwanted sites.
 #categories: pihole blocklist porn-blocking filtering raspberrypi
