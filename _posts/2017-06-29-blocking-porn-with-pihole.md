@@ -2,7 +2,7 @@
 layout:     post
 title:      Blocking porn with Pi-hole
 date:       2017-06-29 11:12:01
-summary:    Using my new project called pihole-blocklists it is possible to create custom blocklists to block porn (among other things) using a pihole.  More lists and creation scripts are coming soon to block a number of possibly unwanted sites.
+summary:    Using my new project called my-pihole-blocklists it is possible to create custom blocklists to block porn (among other things) using a pihole.  More lists and creation scripts are coming soon to block a number of possibly unwanted sites.
 #categories: pihole blocklist porn-blocking filtering raspberrypi
 ---
 
@@ -28,10 +28,10 @@ I want to clarify; the term *unwanted traffic* can have different meanings to pe
 * dating 
 * violence/hate/racism
 
-## Project: pihole-blocklists
+## Project: my-pihole-blocklists
 With those lists in mind I set out to create [PoC](https://en.wikipedia.org/wiki/Proof_of_concept#Software_development) code that would gather open source lists and collate them into a single larger category list that I would then block using pihole.
 
-The product of that PoC now lives in my project repository named[pihole-blocklists](https://github.com/chadmayfield/pihole-blocklists) (hosted on GitHub).  Currently it has just a single perl script (with more coming soon) called [create_blocklist_porn.pl](https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/create_blocklist_porn.pl) which only blocks porn sites.  It does a few things to create the list;
+The product of that PoC now lives in my project repository named [my-pihole-blocklists](https://github.com/chadmayfield/my-pihole-blocklists) (hosted on GitHub).  Currently it has just a single perl script (with more coming soon) called [create_blocklist_porn.pl](https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/create_blocklist_porn.pl) which only blocks porn sites.  It does a few things to create the list;
 
 1. Downloads the Alexa Top 1 Million Site csv file from S3.
 2. Downloads the adult site filter list from Université Toulouse 1 Capitole.
@@ -50,16 +50,16 @@ pi@pihole:~ $ ls -lh /etc/pihole/list.*.githubusercontent*
 
 Either the "light" or "heavy" list can be used on a Raspberry Pi 1 Model B+ or better hardware.  Currently I am using the "heavy" list with ~1.7 million domains on my Raspberry Pi 3.  On that Raspberry Pi 3 with 50+ devices all doing DNS queries it barely breaks a sweat, the load average isn't even 1.0!
 
-*(NOTE: this pihole even has [Docker](https://docker.com/) running with 3 containers!*;
+*(NOTE: this pihole even has [Docker](https://docker.com/) running with 3 containers running 24/7!)*;
 
 <a href="http://i.imgur.com/4LKgton.png"><img src="http://i.imgur.com/4LKgtonl.png"></a><br />
 
 ### Installing Custom Lists
-I'm not going to explain how to install the blocklists in detail, because Installing a custom list is quite simple, [and is covered by the pihole wiki](https://github.com/pi-hole/pi-hole/wiki/Customising-Sources-for-Ad-Lists).  In simple steps, you modify the `/etc/pihole/adlists.list` and add the URL of the pihole list created by [create_blocklist_porn.pl](https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/create_blocklist_porn.pl) (that is served via a webserver accessible to your pihole) and run `pihole -g` to generate a new blocklist for the pihole to use.
+I'm not going to explain how to install the blocklists in detail, because Installing a custom list is quite simple, [and is covered by the pihole wiki](https://github.com/pi-hole/pi-hole/wiki/Customising-Sources-for-Ad-Lists).  In simple steps, you modify the `/etc/pihole/adlists.list` and add the URL of the pihole list created by [create_blocklist_porn.pl](https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/create_blocklist_porn.pl) (that is served via a webserver accessible to your pihole) and run `pihole -g` to generate a new blocklist for the pihole to use.
 
 For ease of adding lists to your pihole I have hosted my generated lists that I create on Github for your use;
-* Light @ 327KB (~20,000 domains): [Chad Mayfield (from Top 1M)](https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list)
-* Heavy @ ~45MB (~1.7m domains): [Chad Mayfield (All)](https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_all.list)
+* Light @ 327KB (~20,000 domains): [Chad Mayfield (from Top 1M)](https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list)
+* Heavy @ ~45MB (~1.7m domains): [Chad Mayfield (All)](https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list)
 
 ### Other Lists & Projects
 There are [list collections](https://wally3k.github.io/) that have [listed my pornography blocklist](https://github.com/WaLLy3K/wally3k.github.io/commit/3c006da42570a871f40067e10d80abfb6ae85cd5) as well as many other lists, along with download links to easily update your pihole.  This [list collection](https://wally3k.github.io/) is courtesy of [@WaLLy3K](https://twitter.com/WaLLy3K);
