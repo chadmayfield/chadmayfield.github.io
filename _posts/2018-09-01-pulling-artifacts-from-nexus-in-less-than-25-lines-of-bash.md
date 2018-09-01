@@ -73,7 +73,7 @@ curl -s -X GET --header 'Accept: application/json' \
 
 First, I [silence (-s)](https://curl.haxx.se/docs/manpage.html#-s) curl while making the [GET (-X)](https://curl.haxx.se/docs/manpage.html#-X) request and I include the [extra header (--header)](https://curl.haxx.se/docs/manpage.html#-H) to request a JSON response from the server.  The `$url` is defined from what we discovered interacting with the Nexus API.  That is enough to get a JSON list of artifacts similar to this;
 
-```bash
+```json
 {
   "items" : [ {
     "downloadUrl" : "http://fileserver/repository/maven-releases/configs/1.0.1-16-g3b321b9/dot-files-0.0.1-16-g3b321b9.zip",
