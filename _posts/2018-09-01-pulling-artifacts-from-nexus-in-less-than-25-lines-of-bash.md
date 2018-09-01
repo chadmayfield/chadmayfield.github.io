@@ -158,7 +158,7 @@ Downloaded : dot-files-1.0.1-19-g214a6ed.zip
 Checksum   : c1df66fcdeadbeefcafebabe1aa282bd4cbb52f3
 ```
 
-Easy right? The code for this post can be found here; [pull-nexus-artifact](https://github.com/chadmayfield/pull-nexus-artifact).
+Easy right? The code for this post can be found here; [pull-nexus-artifact](https://github.com/chadmayfield/pull-nexus-artifact) or <a href="https://i.imgur.com/l5YzEIs.png">as an image</a>.
 
 ## Conclusion
 
