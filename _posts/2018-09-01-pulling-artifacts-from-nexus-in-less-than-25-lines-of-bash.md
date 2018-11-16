@@ -77,7 +77,7 @@ First, I [silence (-s)](https://curl.haxx.se/docs/manpage.html#-s) curl while ma
 {
   "items" : [ {
     "downloadUrl" : "http://fileserver/repository/maven-releases/configs/1.0.1-16-g3b321b9/dot-files-0.0.1-16-g3b321b9.zip",
-    "path" : "configs/0.0.1-16-g3b321b9/dot-files-0.0.1-16-g3b321b9.zip",
+    "path" : "configs/1.0.1-16-g3b321b9/dot-files-1.0.1-16-g3b321b9.zip",
     "id" : "Vm0xd1IyRnRVWGxWV0dSUFZteHdUMVpzWkc5V2JHeDBaVVYwV0ZKdGVIcFhhMk0",
     "repository" : "maven-releases",
     "format" : "maven2",
@@ -87,7 +87,7 @@ First, I [silence (-s)](https://curl.haxx.se/docs/manpage.html#-s) curl while ma
     }
   }, {
     "downloadUrl" : "http://fileserver/repository/maven-releases/configs/1.0.1-16-g3b321b9/dot-files-0.0.1-16-g3b321b9.zip.md5",
-    "path" : "configs/0.0.1-16-g3b321b9/dot-files-0.0.1-16-g3b321b9.zip.md5",
+    "path" : "configs/1.0.1-16-g3b321b9/dot-files-1.0.1-16-g3b321b9.zip.md5",
     "id" : "VmpGYWIxUXlSWGhpUm14VllsaFNhRmxzVm1GT2JHUjBXWHBzVVZWVU1Eaz0isak",
     "repository" : "maven-releases",
     "format" : "maven2",
@@ -97,7 +97,7 @@ First, I [silence (-s)](https://curl.haxx.se/docs/manpage.html#-s) curl while ma
     }
   }, {
     "downloadUrl" : "http://fileserver/repository/maven-releases/configs/1.0.1-16-g3b321b9/dot-files-0.0.1-16-g3b321b9.zip.sha1",
-    "path" : "configs/0.0.1-16-g3b321b9/dot-files-0.0.1-16-g3b321b9.zip.sha1",
+    "path" : "configs/1.0.1-16-g3b321b9/dot-files-1.0.1-16-g3b321b9.zip.sha1",
     "id" : "VmpGYWIxUXlSWGhqU0ZKVFltNUNhRlZxUm5kaU1WWkhVbFJzVVZWVU1Eaz0jnsj",
     "repository" : "maven-releases",
     "format" : "maven2",
@@ -107,7 +107,7 @@ First, I [silence (-s)](https://curl.haxx.se/docs/manpage.html#-s) curl while ma
     }
   }, {
     "downloadUrl" : "http://fileserver/repository/maven-releases/configs/1.0.1-19-g214a6ed/dot-files-0.0.1-19-g214a6ed.zip",
-    "path" : "configs/0.0.1-19-g214a6ed/dot-files-0.0.1-19-g214a6ed.zip",
+    "path" : "configs/1.0.1-19-g214a6ed/dot-files-1.0.1-19-g214a6ed.zip",
     "id" : "RlppVkZaeVdWWlZlRll4WkhKaApSbHBwVW10d05sWnNXbUZXTVZwV1RWVldhQXB",
     "repository" : "maven-releases",
     "format" : "maven2",
@@ -117,7 +117,7 @@ First, I [silence (-s)](https://curl.haxx.se/docs/manpage.html#-s) curl while ma
     }
   }, {
     "downloadUrl" : "http://fileserver/repository/maven-releases/configs/1.0.1-19-g214a6ed/dot-files-0.0.1-19-g214a6ed.zip.md5",
-    "path" : "configs/0.0.1-19-g214a6ed/dot-files-0.0.1-19-g214a6ed.zip.md5",
+    "path" : "configs/1.0.1-19-g214a6ed/dot-files-1.0.1-19-g214a6ed.zip.md5",
     "id" : "Vm0weGQxSXhiRmhUV0doV1YwZDRWRll3Wkc5alZsVjNWMnQwVjFKdGVEQlViRlp",
     "repository" : "maven-releases",
     "format" : "maven2",
