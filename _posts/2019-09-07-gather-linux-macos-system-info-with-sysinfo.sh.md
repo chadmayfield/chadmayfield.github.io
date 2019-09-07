@@ -7,10 +7,10 @@ summary:    Sysinfo.sh is a small shell script that collects system information 
 ---
 
 # Introduction
-[Sysinfo.sh](https://github.com/chadmayfield/sysinfo) is a small shell script that collects system information from a Linux or macOS host and displays it in a well formatted manner.  The information includes hostname, CPU, memory, uptime, load average, netowork stats, and more.  On macOS it even grabs the hardware serial numnber and queries Apple's support website to check and then display the exact model of Apple hardware on which it is running.  This information can easily be put in bug reports, README's, or other support documents.  It is especially effective when connecting to a server that is unfamiliar and information is needed quickly.
+[Sysinfo.sh](https://github.com/chadmayfield/sysinfo) is a small shell script that collects system information from a Linux or macOS host and displays it in a well formatted manner.  The information includes hostname, CPU, memory, uptime, load average, netowork stats, and more.  On macOS it even grabs the hardware serial numnber and queries Apple's support website to check and then display the exact model of Apple hardware on which it is running.  This information can easily be put in bug reports, README's, or other support documents.  It's especially effective when connecting to a server that is unfamiliar and information is needed quickly.
 
 # Why?
-I am on different servers daily and I want a quick look at what hardware the system has.  I can fire of a dozen or so commands and find this information out.  But decided one night to quickly write a script to do it for me, thus this script was born.  It used to live in my [scriptlets repo](https://github.com/chadmayfield/scriptlets), but I recently moved it to its own repo since I have additional plans.  As of today, I have plans to refactor the shell script (its a bit dirty) and then rewrite this in Go and possibly Perl or Python.  I also plan to refactor it and add support for other OSes including Solaris, AIX, and HP-UX.
+I'm on different servers daily and I want a quick look at what hardware the system has.  I can fire off a dozen or so commands and find this information.  But decided one night to quickly write a script to do it for me, thus this script was born.  It used to live in my [scriptlets repo](https://github.com/chadmayfield/scriptlets), but I recently moved it to its own repo since I have additional plans.  As of today, I have plans to refactor the shell script (it's a bit dirty) and then rewrite this in Go and possibly Perl or Python.  I also plan to add support for other OSes including Solaris, AIX, and HP-UX.
 
 ## Repository
 You can find the repo here; [https://github.com/chadmayfield/sysinfo/](sysinfo).
@@ -25,11 +25,11 @@ curl -sSL https://git.io/sysinfo.sh | sudo bash
 *NOTE: Obviously I wouldn't recommend just blindly running the command above if you are concerned about security at all.  Download the script, view the source, and if you trust it, use it.*
 
 ## Sample output
-Here are is samples of the many times that I have run this script;
+Here are some samples of the many times that I have run this script;
 
 ### Linux
 
-##### Linux Mint (as an unprivileged user)
+##### Linux Mint 19.1 (as an unprivileged user)
 ```
 chad@dev-vm:~$ sudo sysinfo.sh
 ------------------------------------------------------------------------
@@ -52,7 +52,7 @@ External IP:         170.xx.x.xxx (170-xx-x-xxx.ut.internethost.net)
 Docker Version:      >>>FOR THIS STAT, RUN AS ROOT<<<
 ------------------------------------------------------------------------
 ```
-##### Linux Mint (as root)
+##### Linux Mint 19.1 (as root)
 ```
 chad@dev-vm:~$ sudo sysinfo.sh
 ------------------------------------------------------------------------
@@ -75,7 +75,7 @@ External IP:         170.xx.xx.xx (170-xx-xx-xx.ut.internethost.net)
 Docker Version:      18.09.7
 ------------------------------------------------------------------------
 ```
-##### CentOS 7
+##### CentOS 7.6
 
 ```
 [chad@nuc1 ~]$ sudo ./sysinfo.sh
